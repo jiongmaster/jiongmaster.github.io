@@ -25,7 +25,7 @@ function setUserName(){
 window.addEventListener('load',()=>{
     let name=localStorage.getItem('name');
 
-    if(name!=''){
+    if(name!=null){
         document.querySelector('h1').textContent='欢迎您！'+ name;
     }
 });
